@@ -13,7 +13,7 @@ namespace Calculator1
 {
     public partial class Form1 : Form
     {
-        double firstNumber;
+        double firstNumber = 0;
         bool clearTextboxOnNextNumber = false;
         bool calculationPerformed = false;
         bool operationPerformed = false;
@@ -53,11 +53,12 @@ namespace Calculator1
 
         void processCalculation(string c_operatorSign)
         {
-            if (!calculationPerformed)
+            if ( ! calculationPerformed)
             {
                 calculate();
             }
-            if (!operationPerformed)
+
+            if ( ! operationPerformed)
             {
                 firstNumber = Convert.ToDouble(TextBox.Text);
             }
@@ -111,11 +112,12 @@ namespace Calculator1
 
         void setBackspace()
         { 
-                if ((displaySavedInput.Text.EndsWith("+") || displaySavedInput.Text.EndsWith("-") || displaySavedInput.Text.EndsWith("✕") ||  displaySavedInput.Text.EndsWith("÷")) && operationPerformed )
+                if ((displaySavedInput.Text.EndsWith("+") || displaySavedInput.Text.EndsWith("-") || displaySavedInput.Text.EndsWith("✕") ||  displaySavedInput.Text.EndsWith("÷")) && operationPerformed)
                 {
                     return;
                 }
-                if (TextBox.Text.Length == 1 || ( TextBox.Text.Length == 2 && TextBox.Text.StartsWith("-") ) )
+
+                if (TextBox.Text.Length == 1 || (TextBox.Text.Length == 2 && TextBox.Text.StartsWith("-")))
                 {
                     TextBox.Text = "0";
                 }
@@ -150,7 +152,7 @@ namespace Calculator1
                     firstNumberLocal = tempNumber;
                 }
 
-                if(operationPerformed == false)
+                if (operationPerformed == false)
                 {
                     if (operatorsign == "+")
                     {
@@ -192,7 +194,7 @@ namespace Calculator1
 
         private void setNumberClick(object sender, EventArgs e)
         {
-            setNumber(((Button)sender).Text); //Button clickedButton = (Button)sender;
+            setNumber(((Button)sender).Text);
         }
 
         //=================================================================================================
@@ -331,7 +333,8 @@ namespace Calculator1
 
         private void loadForm(object sender, EventArgs e)
         {
-            displaySavedInput.Select(); //Defocus button when the program starts
+            //Defocus button when the program starts
+            displaySavedInput.Select(); 
         }
 
         //=================================================================================================
