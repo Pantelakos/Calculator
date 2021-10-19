@@ -13,14 +13,14 @@ namespace Calculator1
 {
     public partial class Form1 : Form
     {
-        //Variablendefinition
         double firstNumber;
         bool clearTextboxOnNextNumber = false;
         bool calculationPerformed = false;
-        bool operationPerformed = false;//
+        bool operationPerformed = false;
         string operatorsign = "";
 
-        //Die Entleerung der Textboxes für die Eingabe der nächsten Zahl
+        //=================================================================================================
+
         void emptyTextBox()
         {
             if (TextBox.Text == "0" || (clearTextboxOnNextNumber))
@@ -32,7 +32,6 @@ namespace Calculator1
 
         //=================================================================================================
 
-        //Die Initialisierung des Forms
         public Form1()
         {
             InitializeComponent();
@@ -41,7 +40,6 @@ namespace Calculator1
 
         //=================================================================================================
 
-        //Funktion für die Eingabe der Zahlen
         void setNumber(string c_input)
         {
             emptyTextBox();
@@ -59,7 +57,7 @@ namespace Calculator1
             {
                 calculate();
             }
-            if (!operationPerformed)//
+            if (!operationPerformed)
             {
                 firstNumber = Convert.ToDouble(TextBox.Text);
             }
@@ -72,12 +70,11 @@ namespace Calculator1
             operatorsign = c_operatorSign;
             displaySavedInput.Text = firstNumber + " " + operatorsign;
             clearTextboxOnNextNumber = true;
-            operationPerformed = true;//
+            operationPerformed = true;
         }
 
         //=================================================================================================
 
-        //Funktion fürs Dezimalzeichen
         void setDecimal()
         {
             emptyTextBox();
@@ -98,7 +95,6 @@ namespace Calculator1
 
         //=================================================================================================
 
-        //Funktion für den Clear Button 
         void clear()
         {
             TextBox.Text = String.Empty;
@@ -113,7 +109,6 @@ namespace Calculator1
 
         //=================================================================================================
 
-        //Funktion für den Backspace (Braucht Verbesserung)
         void setBackspace()
         { 
                 if((displaySavedInput.Text.EndsWith("+") || displaySavedInput.Text.EndsWith("-") || displaySavedInput.Text.EndsWith("✕") ||  displaySavedInput.Text.EndsWith("÷")) && operationPerformed )
@@ -141,7 +136,6 @@ namespace Calculator1
 
         //=================================================================================================
 
-        //Funktion fürs Gleichheitszeichen 
         void calculate()
         {
             if (operatorsign != "")
@@ -156,19 +150,19 @@ namespace Calculator1
                     firstNumberLocal = tempNumber;
                 }
 
-                if (operatorsign == "+" && operationPerformed == false)//
+                if (operatorsign == "+" && operationPerformed == false)
                 {
                     TextBox.Text = (firstNumberLocal + secondNumberLocal).ToString();
                 }
-                else if (operatorsign == "-" && operationPerformed == false)//
+                else if (operatorsign == "-" && operationPerformed == false)
                 {
                     TextBox.Text = (firstNumberLocal - secondNumberLocal).ToString();
                 }
-                else if (operatorsign == "÷" && operationPerformed == false)//
+                else if (operatorsign == "÷" && operationPerformed == false)
                 {
                     TextBox.Text = (firstNumberLocal / secondNumberLocal).ToString();
                 }
-                else if (operatorsign == "✕" && operationPerformed == false)//
+                else if (operatorsign == "✕" && operationPerformed == false)
                 {
                     TextBox.Text = (firstNumberLocal * secondNumberLocal).ToString();
                 }
@@ -185,7 +179,6 @@ namespace Calculator1
 
         //=================================================================================================
 
-        //Funktion fürs Plus/Minus-Zeichen
         void setPositiveNegativeSign()
         {
             operationPerformed = false;
@@ -194,7 +187,6 @@ namespace Calculator1
 
         //=================================================================================================
 
-        //Buttons von 0 bis 9
         private void setNumberClick(object sender, EventArgs e)
         {
             setNumber(((Button)sender).Text); //Button clickedButton = (Button)sender;
@@ -251,8 +243,7 @@ namespace Calculator1
         }
 
         //=================================================================================================
-
-        //Interaction of the keyboard with the calculator    
+   
         private void pressKeyDown(object sender, KeyEventArgs e)
         {
      
