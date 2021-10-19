@@ -111,7 +111,7 @@ namespace Calculator1
 
         void setBackspace()
         { 
-                if((displaySavedInput.Text.EndsWith("+") || displaySavedInput.Text.EndsWith("-") || displaySavedInput.Text.EndsWith("✕") ||  displaySavedInput.Text.EndsWith("÷")) && operationPerformed )
+                if ((displaySavedInput.Text.EndsWith("+") || displaySavedInput.Text.EndsWith("-") || displaySavedInput.Text.EndsWith("✕") ||  displaySavedInput.Text.EndsWith("÷")) && operationPerformed )
                 {
                     return;
                 }
@@ -150,21 +150,24 @@ namespace Calculator1
                     firstNumberLocal = tempNumber;
                 }
 
-                if (operatorsign == "+" && operationPerformed == false)
+                if(operationPerformed == false)
                 {
-                    TextBox.Text = (firstNumberLocal + secondNumberLocal).ToString();
-                }
-                else if (operatorsign == "-" && operationPerformed == false)
-                {
-                    TextBox.Text = (firstNumberLocal - secondNumberLocal).ToString();
-                }
-                else if (operatorsign == "÷" && operationPerformed == false)
-                {
-                    TextBox.Text = (firstNumberLocal / secondNumberLocal).ToString();
-                }
-                else if (operatorsign == "✕" && operationPerformed == false)
-                {
-                    TextBox.Text = (firstNumberLocal * secondNumberLocal).ToString();
+                    if (operatorsign == "+")
+                    {
+                        TextBox.Text = (firstNumberLocal + secondNumberLocal).ToString();
+                    }
+                    else if (operatorsign == "-")
+                    {
+                        TextBox.Text = (firstNumberLocal - secondNumberLocal).ToString();
+                    }
+                    else if (operatorsign == "÷")
+                    {
+                        TextBox.Text = (firstNumberLocal / secondNumberLocal).ToString();
+                    }
+                    else if (operatorsign == "✕")
+                    {
+                        TextBox.Text = (firstNumberLocal * secondNumberLocal).ToString();
+                    }
                 }
 
                 if ( ! calculationPerformed)
