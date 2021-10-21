@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,7 +85,7 @@ namespace Calculator1
                 return;
             }
 
-            if ((operatorsign == "+" || operatorsign == "-" || operatorsign == "✕" || operatorsign == "÷" && TextBox.Text == "") || TextBox.Text == "")
+            if (TextBox.Text == "")
             {
                 TextBox.Text = "0,";
             }
@@ -126,7 +127,7 @@ namespace Calculator1
                     TextBox.Text = TextBox.Text.Remove(TextBox.Text.Length - 1);
                 }
 
-                if (displaySavedInput.Text == "" || (operatorsign == "+" || operatorsign == "-" || operatorsign == "✕" || operatorsign == "÷"))
+                if (displaySavedInput.Text == "" || operatorsign != "")
                 {
                     return;
                 }
