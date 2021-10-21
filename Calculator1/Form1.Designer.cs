@@ -57,6 +57,7 @@
             // 
             this.button.BackColor = System.Drawing.Color.White;
             this.button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button.Location = new System.Drawing.Point(16, 453);
@@ -72,6 +73,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button2.Location = new System.Drawing.Point(112, 453);
@@ -87,6 +89,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.Location = new System.Drawing.Point(208, 453);
@@ -102,6 +105,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button4.Location = new System.Drawing.Point(16, 375);
@@ -117,6 +121,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.White;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button5.Location = new System.Drawing.Point(112, 375);
@@ -132,6 +137,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.White;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button6.Location = new System.Drawing.Point(208, 375);
@@ -147,6 +153,7 @@
             // 
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button7.Location = new System.Drawing.Point(16, 299);
@@ -162,6 +169,7 @@
             // 
             this.button8.BackColor = System.Drawing.Color.White;
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button8.Location = new System.Drawing.Point(112, 299);
@@ -177,6 +185,7 @@
             // 
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button9.Location = new System.Drawing.Point(208, 299);
@@ -192,6 +201,7 @@
             // 
             this.button0.BackColor = System.Drawing.Color.White;
             this.button0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button0.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button0.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button0.Location = new System.Drawing.Point(112, 530);
@@ -206,6 +216,7 @@
             // buttonC
             // 
             this.buttonC.BackColor = System.Drawing.Color.Orange;
+            this.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonC.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonC.Location = new System.Drawing.Point(112, 223);
             this.buttonC.Margin = new System.Windows.Forms.Padding(4);
@@ -219,6 +230,7 @@
             // calculation
             // 
             this.calculation.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.calculation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.calculation.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calculation.Location = new System.Drawing.Point(307, 530);
             this.calculation.Margin = new System.Windows.Forms.Padding(4);
@@ -232,6 +244,7 @@
             // buttonDIV
             // 
             this.buttonDIV.BackColor = System.Drawing.Color.Orange;
+            this.buttonDIV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDIV.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDIV.Location = new System.Drawing.Point(307, 223);
             this.buttonDIV.Margin = new System.Windows.Forms.Padding(4);
@@ -245,6 +258,7 @@
             // buttonMULTI
             // 
             this.buttonMULTI.BackColor = System.Drawing.Color.Orange;
+            this.buttonMULTI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMULTI.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMULTI.Location = new System.Drawing.Point(307, 299);
             this.buttonMULTI.Margin = new System.Windows.Forms.Padding(4);
@@ -258,6 +272,7 @@
             // buttonADD
             // 
             this.buttonADD.BackColor = System.Drawing.Color.Orange;
+            this.buttonADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonADD.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonADD.Location = new System.Drawing.Point(307, 453);
             this.buttonADD.Margin = new System.Windows.Forms.Padding(4);
@@ -271,6 +286,7 @@
             // buttonSUB
             // 
             this.buttonSUB.BackColor = System.Drawing.Color.Orange;
+            this.buttonSUB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSUB.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSUB.Location = new System.Drawing.Point(307, 375);
             this.buttonSUB.Margin = new System.Windows.Forms.Padding(4);
@@ -301,6 +317,7 @@
             // buttonKomma
             // 
             this.buttonKomma.BackColor = System.Drawing.Color.Orange;
+            this.buttonKomma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonKomma.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKomma.Location = new System.Drawing.Point(208, 530);
             this.buttonKomma.Margin = new System.Windows.Forms.Padding(4);
@@ -326,6 +343,7 @@
             // buttonPlusMinus
             // 
             this.buttonPlusMinus.BackColor = System.Drawing.Color.Orange;
+            this.buttonPlusMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPlusMinus.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPlusMinus.Location = new System.Drawing.Point(16, 530);
             this.buttonPlusMinus.Margin = new System.Windows.Forms.Padding(4);
@@ -339,6 +357,7 @@
             // buttonCE
             // 
             this.buttonCE.BackColor = System.Drawing.Color.Orange;
+            this.buttonCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCE.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCE.Location = new System.Drawing.Point(16, 223);
             this.buttonCE.Margin = new System.Windows.Forms.Padding(4);
@@ -352,6 +371,7 @@
             // buttonBACKSPACE
             // 
             this.buttonBACKSPACE.BackColor = System.Drawing.Color.Orange;
+            this.buttonBACKSPACE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBACKSPACE.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBACKSPACE.Location = new System.Drawing.Point(208, 223);
             this.buttonBACKSPACE.Margin = new System.Windows.Forms.Padding(4);
